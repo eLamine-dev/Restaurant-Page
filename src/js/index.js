@@ -3,6 +3,7 @@ import reset from '../css/reset.css';
 import logoSrc from '../images/logo.png';
 import renderHome from './homepage';
 import renderMenu from './menu';
+import renderAboutPage from './about';
 
 const content = document.getElementById('content');
 
@@ -30,3 +31,4 @@ navBar.appendChild(navBarLinks);
 content.prepend(navBar);
 content.appendChild(renderHome());
 content.appendChild(renderMenu());
+content.appendChild(renderAboutPage());
