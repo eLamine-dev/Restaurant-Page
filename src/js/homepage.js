@@ -9,11 +9,11 @@ function renderHome() {
 
    const mainTxt = document.createElement('h1');
    mainTxt.id = 'mainTxt';
-   mainTxt.innerText = 'Welcome to EL DJAZAIR';
+   mainTxt.innerText = 'Welcome to Algerian Delights';
 
    const homeParagraph = document.createElement('p');
    homeParagraph.id = 'homeParagraph';
-   homeParagraph.innerText = 'Algerian traditional sweets';
+   homeParagraph.innerText = 'House of the Algerian traditional sweets';
 
    textSection.appendChild(mainTxt);
    textSection.appendChild(homeParagraph);

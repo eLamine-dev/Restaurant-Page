@@ -29,8 +29,4 @@ navBar.appendChild(navBarLinks);
 
 content.prepend(navBar);
 content.appendChild(renderHome());
-
-// const img = document.createElement('img');
-// img.src = testImg;
-
-// content.appendChild(img);
+content.appendChild(renderMenu());
