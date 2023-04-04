@@ -3,7 +3,7 @@ const path = require('path');
 
 module.exports = {
    mode: 'development',
-   entry: './src/index.js',
+   entry: './src/js/index.js',
    output: {
       filename: 'main.js',
       path: path.resolve(__dirname, 'dist'),
@@ -19,7 +19,7 @@ module.exports = {
          },
 
          {
-            test: /\.(png|svg|jpg|jpeg|gif)$/i,
+            test: /\.(png|svg|jpg|jpeg|gif|webp)$/i,
 
             type: 'asset/resource',
          },
@@ -30,7 +30,7 @@ module.exports = {
       new HtmlWebpackPlugin({
          title: 'Restaurant Page',
          filename: 'index.html',
-         template: path.resolve(__dirname, './src/template.html'),
+         template: path.resolve(__dirname, './src/html/template.html'),
       }),
    ],
 };

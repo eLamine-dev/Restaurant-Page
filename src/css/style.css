@@ -1,0 +1,24 @@
+#content {
+}
+
+#header {
+   display: flex;
+   justify-content: space-between;
+   background-color: gray;
+}
+
+#links {
+   display: flex;
+   gap: 20px;
+}
+
+#homeContent {
+   display: flex;
+}
+
+/* #content {
+   background-image: url('test.jpg');
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   background-size: cover;
+} */
