@@ -31,7 +31,7 @@ function renderMenu() {
 
       const price = document.createElement('p');
       price.classList.add('price');
-      price.textContent = '$' + item.price.toFixed(2);
+      price.textContent = `$${item.price.toFixed(2)}`;
       card.appendChild(price);
 
       return card;
