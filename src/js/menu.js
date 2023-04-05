@@ -1,7 +1,7 @@
 function renderMenu() {
    const menuItems = [
       {
-         name: 'Makroud louz',
+         name: 'Makroud',
          description: 'some text',
          price: 9.99,
       },
@@ -38,6 +38,8 @@ function renderMenu() {
    }
 
    const menu = document.createElement('div');
+   menu.id = 'menu-container';
+   menu.classList.add('main-content');
    menuItems.forEach((item) => {
       const card = createMenuItemCard(item);
       menu.appendChild(card);

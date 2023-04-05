@@ -5,6 +5,7 @@ import renderHome from './homepage';
 import renderMenu from './menu';
 import renderAboutPage from './about';
 
+const body = document.getElementById('body');
 const content = document.getElementById('content');
 
 const navBar = document.createElement('header');
@@ -26,19 +27,15 @@ tabsList.forEach((el) => {
 });
 
 function switchPages(e) {
+   const mainContent = document.querySelector('.main-content');
+   if (mainContent) content.removeChild(mainContent);
    if (e.target.classList.contains('Home')) {
-      content.innerHTML = '';
-      content.prepend(navBar);
       content.appendChild(renderHome());
    }
    if (e.target.classList.contains('Menu')) {
-      content.innerHTML = '';
-      content.prepend(navBar);
       content.appendChild(renderMenu());
    }
    if (e.target.classList.contains('About')) {
-      content.innerHTML = '';
-      content.prepend(navBar);
       content.appendChild(renderAboutPage());
    }
 }
@@ -50,4 +47,5 @@ logo.style.height = '50px';
 navBar.appendChild(logo);
 navBar.appendChild(navBarLinks);
 
-content.prepend(navBar);
+body.prepend(navBar);
+content.appendChild(renderHome());

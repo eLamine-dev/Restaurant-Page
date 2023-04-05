@@ -1,6 +1,7 @@
 function renderAboutPage() {
    const aboutContainer = document.createElement('div');
    aboutContainer.id = 'about-container';
+   aboutContainer.classList.add('main-content');
 
    const heading = document.createElement('h1');
    heading.textContent = 'About Us';

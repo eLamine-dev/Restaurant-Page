@@ -2,7 +2,8 @@ import homeImg from '../images/homeImg.jpg';
 
 function renderHome() {
    const homeContent = document.createElement('div');
-   homeContent.id = 'homeContent';
+   homeContent.id = 'home-container';
+   homeContent.classList.add('main-content');
 
    const textSection = document.createElement('div');
    textSection.id = 'textSection';
