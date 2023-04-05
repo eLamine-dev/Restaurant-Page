@@ -13,7 +13,7 @@
    gap: 20px;
 }
 
-#homeContent {
+#home-container {
    display: flex;
    justify-content: center;
    align-items: center;
