@@ -1,11 +1,13 @@
 #content {
    background-color: bisque;
+   height: 100vh;
 }
 
 #header {
    display: flex;
    justify-content: space-between;
    background-color: gray;
+   height: 10%;
 }
 
 #links {
@@ -17,4 +19,8 @@
    display: flex;
    justify-content: center;
    align-items: center;
+}
+
+.footer {
+   background-color: blue;
 }

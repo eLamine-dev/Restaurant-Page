@@ -11,6 +11,20 @@ function renderNavBar() {
    const navBarTabs = document.createElement('ul');
    navBarTabs.id = 'links';
 
+   function switchPages(e) {
+      const mainContent = document.getElementById('main');
+      if (mainContent) mainContent.innerHTML = '';
+      if (e.target.id === 'Home') {
+         mainContent.appendChild(renderHome());
+      }
+      if (e.target.id === 'Menu') {
+         mainContent.appendChild(renderMenu());
+      }
+      if (e.target.id === 'About') {
+         mainContent.appendChild(renderAboutPage());
+      }
+   }
+
    tabsList.forEach((el) => {
       const tab = document.createElement('li');
       tab.innerText = el;
@@ -21,20 +35,6 @@ function renderNavBar() {
          switchPages(e);
       });
    });
-
-   function switchPages(e) {
-      const mainContent = document.querySelector('.main-content');
-      if (mainContent) content.removeChild(mainContent);
-      if (e.target.id === 'Home') {
-         content.appendChild(renderHome());
-      }
-      if (e.target.id === 'Menu') {
-         content.appendChild(renderMenu());
-      }
-      if (e.target.id === 'About') {
-         content.appendChild(renderAboutPage());
-      }
-   }
 
    const logo = document.createElement('img');
    logo.src = logoSrc;
