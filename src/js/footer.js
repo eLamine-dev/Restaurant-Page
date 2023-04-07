@@ -13,7 +13,7 @@ function renderFooter() {
    const githubIcon = document.createElement('img');
    githubIcon.src = githubSvg;
    githubIcon.id = 'github-icon';
-   githubIcon.style.height = '50px';
+   githubIcon.style.height = '30px';
 
    githubLink.appendChild(githubIcon);
    footer.appendChild(copyright);

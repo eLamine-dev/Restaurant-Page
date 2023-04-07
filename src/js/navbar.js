@@ -1,4 +1,3 @@
-import logoSrc from '../images/logo.png';
 import renderMenu from './menu';
 import renderAboutPage from './about';
 import renderHome from './homepage';
@@ -10,16 +9,16 @@ function renderNavBar() {
 
    const tabsList = ['Home', 'Menu', 'About'];
    const navBarTabs = document.createElement('ul');
-   navBarTabs.id = 'links';
+   navBarTabs.id = 'tabs';
 
    function switchPages(e) {
-      if (e.target.id === 'Home') {
+      if (e.target.id === 'home') {
          renderMain(renderHome());
       }
-      if (e.target.id === 'Menu') {
+      if (e.target.id === 'menu') {
          renderMain(renderMenu());
       }
-      if (e.target.id === 'About') {
+      if (e.target.id === 'about') {
          renderMain(renderAboutPage());
       }
    }
@@ -28,18 +27,13 @@ function renderNavBar() {
       const tab = document.createElement('li');
       tab.innerText = el;
       tab.classList.add('tab');
-      tab.id = el;
+      tab.id = el.toLowerCase();
       navBarTabs.appendChild(tab);
       navBarTabs.addEventListener('click', (e) => {
          switchPages(e);
       });
    });
 
-   const logo = document.createElement('img');
-   logo.src = logoSrc;
-   logo.style.height = '50px';
-
-   navBar.appendChild(logo);
    navBar.appendChild(navBarTabs);
 
    return navBar;
