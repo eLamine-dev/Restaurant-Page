@@ -21,8 +21,8 @@ function renderHome() {
    homeParagraph.innerText = 'Algerian traditional sweets';
 
    const img = document.createElement('img');
+   img.id = 'home-img';
    img.src = homeImg;
-   img.style.height = '300px';
 
    textSection.appendChild(welcomeTxt);
    textSection.appendChild(img);

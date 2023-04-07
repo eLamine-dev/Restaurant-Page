@@ -7,7 +7,7 @@ function renderNavBar() {
    const navBar = document.createElement('header');
    navBar.id = 'header';
 
-   const tabsList = ['Home', 'Menu', 'About'];
+   const tabsList = ['Home', 'Specialties', 'Contact'];
    const navBarTabs = document.createElement('ul');
    navBarTabs.id = 'tabs';
 
@@ -15,12 +15,20 @@ function renderNavBar() {
       if (e.target.id === 'home') {
          renderMain(renderHome());
       }
-      if (e.target.id === 'menu') {
+      if (e.target.id === 'specialties') {
          renderMain(renderMenu());
       }
-      if (e.target.id === 'about') {
+      if (e.target.id === 'contact') {
          renderMain(renderAboutPage());
       }
+   }
+
+   function activeTabLine(e) {
+      navBarTabs.childNodes.forEach((tab) => {
+         tab.classList.remove('active-tab');
+      });
+
+      e.target.classList.add('active-tab');
    }
 
    tabsList.forEach((el) => {
@@ -31,7 +39,9 @@ function renderNavBar() {
       navBarTabs.appendChild(tab);
       navBarTabs.addEventListener('click', (e) => {
          switchPages(e);
+         activeTabLine(e);
       });
+      if (tab.id === 'home') tab.classList.add('active-tab');
    });
 
    navBar.appendChild(navBarTabs);

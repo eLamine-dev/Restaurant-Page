@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
 
 :root {
-   --transparent: #334155cd;
+   --transparent: #000000bd;
 }
 
 #content {
@@ -25,12 +25,12 @@
    color: #fef2f2;
    background-color: var(--transparent);
    width: 100%;
-   font-size: 1.7rem;
+   font-size: 1.5rem;
 }
 
 #tabs {
    display: flex;
-   gap: 7rem;
+   gap: 4rem;
 }
 
 #main {
@@ -38,6 +38,8 @@
    display: flex;
    justify-content: center;
    align-items: center;
+   width: 100vw;
+   background-color: var(--transparent);
 }
 
 .footer {
@@ -68,20 +70,29 @@
 #text-section {
    text-align: center;
    color: #fef2f2;
-   background-color: var(--transparent);
+   /* background-color: var(--transparent); */
    display: flex;
    flex-direction: column;
    justify-content: center;
    align-items: center;
    gap: 1.6rem;
-   padding: 3rem;
+   /* padding: 3rem; */
+}
+
+#home-img {
+   height: 350px;
+   border-radius: 50%;
 }
 
 .tab {
    cursor: pointer;
    padding: 0.5rem 0;
-   border-bottom: #fef2f2 2px solid;
+
    transition: 300ms;
+}
+
+.active-tab {
+   border-bottom: #fef2f2 2px solid;
 }
 
 .tab:hover {
