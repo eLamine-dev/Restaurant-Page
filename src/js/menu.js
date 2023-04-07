@@ -34,6 +34,11 @@ function renderMenu() {
       price.textContent = `$${item.price.toFixed(2)}`;
       card.appendChild(price);
 
+      const img = document.createElement('img');
+      img.id = `${item.name}-img`;
+
+      card.appendChild(img);
+
       return card;
    }
 
@@ -42,6 +47,7 @@ function renderMenu() {
    menu.classList.add('main-content');
    menuItems.forEach((item) => {
       const card = createMenuItemCard(item);
+      card.id = item.name;
       menu.appendChild(card);
    });
 

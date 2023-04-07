@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+:root {
+   --transparent: #334155cd;
+}
+
 #content {
    display: flex;
    flex-direction: column;
@@ -7,20 +14,23 @@
    background-image: url('../images/background.jpg');
    background-repeat: no-repeat;
    background-size: cover;
+   font-family: 'Josefin Sans', sans-serif;
 }
 
 #header {
    display: flex;
    align-items: center;
    justify-content: center;
-   height: 7%;
-   background-color: #2103038a;
+   height: 10%;
+   color: #fef2f2;
+   background-color: var(--transparent);
    width: 100%;
+   font-size: 1.7rem;
 }
 
 #tabs {
    display: flex;
-   gap: 20px;
+   gap: 7rem;
 }
 
 #main {
@@ -30,39 +40,68 @@
    align-items: center;
 }
 
-.main-content {
-   height: 60%;
-}
-
 .footer {
-   background-color: #2103038a;
+   background-color: var(--transparent);
    width: 100%;
    display: flex;
    align-items: center;
    justify-content: center;
    height: 5%;
+   color: #fef2f2;
+   gap: 2rem;
+}
+
+#welcome {
+   font-size: 3rem;
+   font-family: 'Great Vibes', cursive;
 }
 
 #main-txt {
    font-weight: 500;
    font-size: 3rem;
-   margin-bottom: 1rem;
 }
 
 #home-paragraph {
-   font-size: 1.3rem;
+   font-size: 1.5rem;
 }
 
 #text-section {
-   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-      Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
    text-align: center;
-   color: #d4af37;
-   background-color: #2103038a;
-   height: 100%;
-   width: 40vw;
+   color: #fef2f2;
+   background-color: var(--transparent);
    display: flex;
    flex-direction: column;
    justify-content: center;
    align-items: center;
+   gap: 1.6rem;
+   padding: 3rem;
+}
+
+.tab {
+   cursor: pointer;
+   padding: 0.5rem 0;
+   border-bottom: #fef2f2 2px solid;
+   transition: 300ms;
+}
+
+.tab:hover {
+   transform: translateY(-5px);
+}
+
+.menu-item {
+   text-align: center;
+   color: #fef2f2;
+   background-color: var(--transparent);
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   gap: 1rem;
+}
+
+#menu-container {
+   display: flex;
+   flex-direction: column;
+   gap: 1rem;
+   width: 40vw;
 }
