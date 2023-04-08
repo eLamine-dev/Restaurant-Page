@@ -24,11 +24,12 @@ function renderNavBar() {
    }
 
    function activeTabLine(e) {
-      navBarTabs.childNodes.forEach((tab) => {
-         tab.classList.remove('active-tab');
-      });
-
-      e.target.classList.add('active-tab');
+      if (e.target.classList.contains('tab')) {
+         navBarTabs.childNodes.forEach((tab) => {
+            tab.classList.remove('active-tab');
+            e.target.classList.add('active-tab');
+         });
+      }
    }
 
    tabsList.forEach((el) => {

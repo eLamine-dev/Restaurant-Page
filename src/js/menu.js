@@ -1,3 +1,5 @@
+import src from '../images/homeImg.jpg';
+
 function renderMenu() {
    const menuItems = [
       {
@@ -14,6 +16,7 @@ function renderMenu() {
          name: 'Griouech',
          description: 'some text',
          price: 9.99,
+         img: src,
       },
    ];
 
@@ -21,23 +24,23 @@ function renderMenu() {
       const card = document.createElement('div');
       card.classList.add('menu-item');
 
+      const img = document.createElement('img');
+      img.classList.add('item-img');
+      img.src = item.img;
+      card.appendChild(img);
+
       const name = document.createElement('h2');
       name.textContent = item.name;
       card.appendChild(name);
-
-      const description = document.createElement('p');
-      description.textContent = item.description;
-      card.appendChild(description);
 
       const price = document.createElement('p');
       price.classList.add('price');
       price.textContent = `$${item.price.toFixed(2)}`;
       card.appendChild(price);
 
-      const img = document.createElement('img');
-      img.id = `${item.name}-img`;
-
-      card.appendChild(img);
+      const description = document.createElement('p');
+      description.textContent = item.description;
+      card.appendChild(description);
 
       return card;
    }
