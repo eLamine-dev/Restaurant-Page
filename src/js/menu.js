@@ -1,4 +1,4 @@
-import src from '../images/homeImg.jpg';
+import makroud from '../images/makroud.jpg';
 
 function renderMenu() {
    const menuItems = [
@@ -6,6 +6,7 @@ function renderMenu() {
          name: 'Makroud',
          description: 'some text',
          price: 9.99,
+         img: makroud,
       },
       {
          name: 'Baklawa',
@@ -16,7 +17,6 @@ function renderMenu() {
          name: 'Griouech',
          description: 'some text',
          price: 9.99,
-         img: src,
       },
    ];
 
