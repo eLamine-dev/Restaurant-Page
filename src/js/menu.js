@@ -1,7 +1,30 @@
+import makroudlouz from '../images/makroudlouz.jpg';
+import baklawa from '../images/baklawa.png';
 import makroud from '../images/makroud.jpg';
+import griouech from '../images/griouech.jpg';
+import tcharak from '../images/tcharak.jpg';
+import kaak from '../images/kaak.jpg';
 
 function renderMenu() {
    const menuItems = [
+      {
+         name: 'Makroud elouz',
+         description: 'some text',
+         price: 9.99,
+         img: makroudlouz,
+      },
+      {
+         name: 'Baklawa',
+         description: 'some other text',
+         price: 9.99,
+         img: baklawa,
+      },
+      {
+         name: 'Griouech',
+         description: 'some text',
+         price: 9.99,
+         img: griouech,
+      },
       {
          name: 'Makroud',
          description: 'some text',
@@ -9,14 +32,16 @@ function renderMenu() {
          img: makroud,
       },
       {
-         name: 'Baklawa',
-         description: 'some other text',
-         price: 9.99,
-      },
-      {
-         name: 'Griouech',
+         name: 'Tcharek',
          description: 'some text',
          price: 9.99,
+         img: tcharak,
+      },
+      {
+         name: 'Kaak nakache',
+         description: 'some text',
+         price: 9.99,
+         img: kaak,
       },
    ];
 

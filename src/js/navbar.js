@@ -1,5 +1,5 @@
 import renderMenu from './menu';
-import renderAboutPage from './about';
+import renderContactPage from './contact';
 import renderHome from './homepage';
 import renderMain from './main';
 
@@ -19,7 +19,7 @@ function renderNavBar() {
          renderMain(renderMenu());
       }
       if (e.target.id === 'contact') {
-         renderMain(renderAboutPage());
+         renderMain(renderContactPage());
       }
    }
 

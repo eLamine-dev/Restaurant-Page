@@ -111,13 +111,15 @@
 }
 
 #menu-container {
-   display: flex;
-   /* flex-direction: column; */
+   display: grid;
+   grid-template-rows: 1fr 1fr;
+   grid-template-columns: 1fr 1fr;
    gap: 1rem;
    width: 40vw;
    padding: 2rem;
 }
 
 .item-img {
-   height: 100px;
+   height: 150px;
+   border-radius: 50%;
 }

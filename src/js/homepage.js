@@ -18,7 +18,7 @@ function renderHome() {
 
    const homeParagraph = document.createElement('p');
    homeParagraph.id = 'home-paragraph';
-   homeParagraph.innerText = 'Algerian traditional sweets';
+   homeParagraph.innerText = 'A bite of tradition, a taste of heritage';
 
    const img = document.createElement('img');
    img.id = 'home-img';
