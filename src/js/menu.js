@@ -55,15 +55,17 @@ function renderMenu() {
       card.appendChild(img);
 
       const name = document.createElement('h2');
+      name.classList.add('item-name');
       name.textContent = item.name;
       card.appendChild(name);
 
       const price = document.createElement('p');
-      price.classList.add('price');
+      price.classList.add('item-price');
       price.textContent = `$${item.price.toFixed(2)}`;
       card.appendChild(price);
 
       const description = document.createElement('p');
+      description.classList.add('item-description');
       description.textContent = item.description;
       card.appendChild(description);
 
