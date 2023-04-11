@@ -15,7 +15,7 @@ function renderContactPage() {
    // contactContainer.appendChild(paragraph2);
 
    const githubLink = document.createElement('a');
-   githubLink.href = 'https://github.com/eLamine-dev';
+   githubLink.href = 'https://github.com/eLamine-dev/Restaurant-Page';
 
    const githubIcon = document.createElement('img');
    githubIcon.src = githubSvg;
