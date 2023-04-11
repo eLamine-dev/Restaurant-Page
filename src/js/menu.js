@@ -9,37 +9,41 @@ function renderMenu() {
    const menuItems = [
       {
          name: 'Makroud elouz',
-         description: 'some text',
+         description:
+            'cookies consisting of almonds, eggs, sugar, and a flavoring of orange flower water',
          price: 9.99,
          img: makroudlouz,
       },
       {
          name: 'Baklawa',
-         description: 'some other text',
+         description:
+            'layers of phyllo dough packed with chopped nuts and soaked in syrup',
          price: 9.99,
          img: baklawa,
       },
       {
          name: 'Griouech',
-         description: 'some text',
+         description:
+            'fried dough balls soaked in honey and sprinkled with sesame seeds`',
          price: 9.99,
          img: griouech,
       },
       {
          name: 'Makroud',
-         description: 'some text',
+         description: 'Semolina dough filled with dates.',
          price: 9.99,
          img: makroud,
       },
       {
          name: 'Tcharek',
-         description: 'some text',
+         description:
+            'also known as Gazelle Horns, a pastry filled with almonds',
          price: 9.99,
          img: tcharak,
       },
       {
          name: 'Kaak nakache',
-         description: 'some text',
+         description: 'cookie filled with dates, almonds, and spices',
          price: 9.99,
          img: kaak,
       },

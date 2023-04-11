@@ -2,7 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
 
 :root {
-   --transparent: #000000d4;
+   --transparent: #020617c7;
+   --white: #ffe4e6;
+   /* --transparent: #000000d4; */
 }
 
 #content {
@@ -22,7 +24,7 @@
    align-items: center;
    justify-content: center;
    height: 10vh;
-   color: #fef2f2;
+   color: var(--white);
    background-color: var(--transparent);
    width: 100%;
    font-size: 1.5rem;
@@ -47,38 +49,41 @@
    align-items: center;
    justify-content: center;
    height: 5vh;
-   color: #fef2f2;
+   color: var(--white);
    gap: 2rem;
 }
 
 #welcome {
-   font-size: 6vh;
+   font-size: max(7vh, 1.5rem);
    font-family: 'Great Vibes', cursive;
+   color: #fda4af;
 }
 
 #main-txt {
    font-weight: 500;
-   font-size: 5vh;
+   font-size: max(5vh, 1.5rem);
 }
 
 #home-paragraph {
-   font-size: 3vh;
+   font-size: max(2.5vh, 1rem);
+   font-weight: 400;
 }
 
 #home-container {
-   height: 50vh;
-   color: #fef2f2;
+   height: max(55vh, 300px);
+   width: max(45vh, 200px);
+   color: var(--white);
    background-color: var(--transparent);
    display: flex;
    flex-direction: column;
-   justify-content: center;
+   justify-content: space-between;
    align-items: center;
-   gap: 1.4rem;
-   padding: 1.6rem;
+
+   padding: 2.5rem 1.2rem;
 }
 
 #home-img {
-   height: 30vh;
+   height: max(35vh, 100px);
    border-radius: 50%;
 }
 
@@ -90,7 +95,7 @@
 }
 
 .active-tab {
-   border-bottom: #fef2f2 2px solid;
+   border-bottom: var(--white) 2px solid;
 }
 
 .tab:hover {
@@ -98,42 +103,51 @@
 }
 
 .menu-item {
-   color: #fef2f2;
+   color: var(--white);
    background-color: var(--transparent);
-   min-width: 300px;
    display: grid;
    grid-template-columns: 1fr 3fr 1fr;
-   grid-template-rows: 1fr 1fr;
+   grid-template-rows: 1fr 2fr;
    align-items: center;
    justify-items: start;
-   gap: 0.2rem;
+   padding: 1rem;
+   gap: 1rem;
 }
 
 #menu-container {
    display: grid;
    grid-template-rows: 1fr 1fr;
-   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+   grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
    gap: 1rem;
+   margin: 1rem;
+}
 
-   padding: 2rem;
+.item-price {
+   font-size: 1.4rem;
+}
+
+.item-name {
+   font-size: 1.4rem;
 }
 
 .item-img {
-   height: 150px;
+   height: 140px;
    border-radius: 50%;
    grid-row: 1/3;
-   padding: 1rem;
 }
 
 .item-description {
    grid-column: 2/4;
+   align-self: flex-start;
+   font-size: 1.2rem;
+   font-weight: 300;
 }
 
 #about-container {
-   line-height: 2.5rem;
+   line-height: 2rem;
    font-weight: 300;
-   font-size: 1.8rem;
-   color: #fef2f2;
+   font-size: 1.4rem;
+   color: var(--white);
    background-color: var(--transparent);
    max-width: 500px;
    padding: 2rem;
