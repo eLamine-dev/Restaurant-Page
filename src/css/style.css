@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
 
 :root {
-   --transparent: #020617c7;
+   --transparent: #01030cc7;
    --white: #ffe4e6;
    /* --transparent: #000000d4; */
 }
@@ -42,6 +42,16 @@
    width: 100vw;
 }
 
+@keyframes fadeIn {
+   0% {
+      opacity: 0;
+   }
+
+   100% {
+      opacity: 1;
+   }
+}
+
 .footer {
    background-color: var(--transparent);
    width: 100%;
@@ -78,8 +88,8 @@
    flex-direction: column;
    justify-content: space-between;
    align-items: center;
-
    padding: 2.5rem 1.2rem;
+   animation: fadeIn 1s;
 }
 
 #home-img {
@@ -120,6 +130,7 @@
    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
    gap: 1rem;
    margin: 1rem;
+   animation: fadeIn 1s;
 }
 
 .item-price {
@@ -151,4 +162,5 @@
    background-color: var(--transparent);
    max-width: 500px;
    padding: 2rem;
+   animation: fadeIn 1s;
 }
