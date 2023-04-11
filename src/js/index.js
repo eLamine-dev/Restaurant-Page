@@ -9,6 +9,6 @@ const content = document.getElementById('content');
 // add header
 content.appendChild(renderNavBar());
 // add main section
-content.appendChild(renderMenu());
+content.appendChild(renderMain());
 // add footer
 content.appendChild(renderFooter());
