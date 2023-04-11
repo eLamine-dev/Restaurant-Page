@@ -5,9 +5,6 @@ function renderHome() {
    homeContent.id = 'home-container';
    homeContent.classList.add('main-content');
 
-   const textSection = document.createElement('div');
-   textSection.id = 'text-section';
-
    const welcomeTxt = document.createElement('h3');
    welcomeTxt.id = 'welcome';
    welcomeTxt.innerText = 'Welcome to';
@@ -24,12 +21,10 @@ function renderHome() {
    img.id = 'home-img';
    img.src = homeImg;
 
-   textSection.appendChild(welcomeTxt);
-   textSection.appendChild(img);
-   textSection.appendChild(mainTxt);
-   textSection.appendChild(homeParagraph);
-
-   homeContent.appendChild(textSection);
+   homeContent.appendChild(welcomeTxt);
+   homeContent.appendChild(img);
+   homeContent.appendChild(mainTxt);
+   homeContent.appendChild(homeParagraph);
 
    return homeContent;
 }

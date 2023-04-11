@@ -52,33 +52,33 @@
 }
 
 #welcome {
-   font-size: 3rem;
+   font-size: 6vh;
    font-family: 'Great Vibes', cursive;
 }
 
 #main-txt {
    font-weight: 500;
-   font-size: 3rem;
+   font-size: 5vh;
 }
 
 #home-paragraph {
-   font-size: 1.5rem;
+   font-size: 3vh;
 }
 
-#text-section {
-   text-align: center;
+#home-container {
+   height: 50vh;
    color: #fef2f2;
    background-color: var(--transparent);
    display: flex;
    flex-direction: column;
    justify-content: center;
    align-items: center;
-   gap: 1.6rem;
-   padding: 2rem;
+   gap: 1.4rem;
+   padding: 1.6rem;
 }
 
 #home-img {
-   height: 350px;
+   height: 30vh;
    border-radius: 50%;
 }
 
@@ -127,4 +127,14 @@
 
 .item-description {
    grid-column: 2/4;
+}
+
+#about-container {
+   line-height: 2.5rem;
+   font-weight: 300;
+   font-size: 1.8rem;
+   color: #fef2f2;
+   background-color: var(--transparent);
+   max-width: 500px;
+   padding: 2rem;
 }
