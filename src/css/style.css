@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
 
 :root {
-   --transparent: #01030cc7;
+   --transparent: #010411c7;
    --white: #ffe4e6;
    /* --transparent: #000000d4; */
 }
@@ -13,7 +13,7 @@
    align-items: center;
    justify-content: space-between;
    min-height: 100vh;
-   background-image: url('../images/background.jpg');
+   background-image: url('../images/background2.jpg');
    background-attachment: fixed;
    background-size: cover;
    font-family: 'Josefin Sans', sans-serif;
@@ -152,9 +152,12 @@
    align-self: flex-start;
    font-size: 1.2rem;
    font-weight: 300;
+   line-height: 1.4rem;
 }
 
 #about-container {
+   display: grid;
+   gap: 1rem;
    line-height: 2rem;
    font-weight: 300;
    font-size: 1.4rem;
