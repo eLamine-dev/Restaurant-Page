@@ -7,7 +7,7 @@ function renderNavBar() {
    const navBar = document.createElement('header');
    navBar.id = 'header';
 
-   const tabsList = ['Home', 'Specialties', 'Contact'];
+   const tabsList = ['Home', 'Menu', 'Contact'];
    const navBarTabs = document.createElement('ul');
    navBarTabs.id = 'tabs';
 
@@ -15,7 +15,7 @@ function renderNavBar() {
       if (e.target.id === 'home') {
          renderMain(renderHome());
       }
-      if (e.target.id === 'specialties') {
+      if (e.target.id === 'menu') {
          renderMain(renderMenu());
       }
       if (e.target.id === 'contact') {
